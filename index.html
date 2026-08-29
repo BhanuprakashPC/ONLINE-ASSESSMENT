@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BCA Quiz</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div><h1>🎓 BCA Computer Science Quiz</h1><p>Aptitude • Data Structures • OS • C • Java • Programming</p></div><a href="admin.html">Admin</a></header><main>
+<section id="start" class="card"><div class="hero"><span>ONLINE ASSESSMENT</span><h2>Computer Science Knowledge Test</h2><p>One attempt per register number on this browser.</p></div>
+<form id="form"><label>Student Name<input id="name" required placeholder="Enter full name"></label><label>Register Number<input id="reg" required placeholder="Enter register number"></label>
+<label>Semester<select id="sem" required><option value="">Select semester</option><option>1st Semester</option><option>2nd Semester</option><option>3rd Semester</option><option>4th Semester</option><option>5th Semester</option><option>6th Semester</option></select></label>
+<label>Section<select id="sec" required><option value="">Select section</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label>
+<button class="primary full" type="submit">Start Quiz →</button></form><p id="error" class="error"></p></section>
+<section id="quiz" class="hidden"><div class="card qhead"><div><span id="cat"></span><h2 id="qno"></h2></div><strong id="time">30:00</strong></div><div class="progress"><i id="bar"></i></div>
+<div class="card"><h2 id="question"></h2><div id="options"></div><button id="next" class="primary" disabled>Next Question →</button></div></section>
+<section id="result" class="card result hidden"><div>🏆</div><h2>Quiz Completed!</h2><p id="msg"></p><b id="final"></b><p>Your result has been saved on this browser.</p><a class="primary link" href="index.html">Finish</a></section>
+</main><script src="script.js"></script></body></html>
